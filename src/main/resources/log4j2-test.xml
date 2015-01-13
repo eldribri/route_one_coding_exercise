@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" name="Interview">
+    <Appenders>
+        <File name="testing_log_file" fileName="logs/app-test.log">
+            <PatternLayout>
+                <Pattern>[%p] %d{MM-dd-yyyy HH:mm:ss} %C[%M] - %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="testing_log_file"/>
+        </Root>
+    </Loggers>
+</Configuration>
